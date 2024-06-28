@@ -21,7 +21,7 @@ function ResetPassword () {
     setMessage('');
     setError('');
     
-    axios.post(`http://localhost:5101/reset-password/${email}/${token}`, { password })
+    axios.post(`https://national-auto-backup-frontend.onrender.com/reset-password/${email}/${token}`, { password })
       .then(result => {
         if (result.status === 200 && result.data.Status === 'Success') {
           navigate('/thelogin');

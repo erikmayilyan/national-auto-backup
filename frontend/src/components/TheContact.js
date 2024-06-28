@@ -53,7 +53,7 @@ function TheContact() {
 
     toggleModal();
 
-    fetch(`http://localhost:5101/contactPage`, {
+    fetch(`https://national-auto-backup-frontend.onrender.com/contactPage`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -75,7 +75,7 @@ function TheContact() {
   useEffect(() => {
     const fetchTeamMembers = async () => {
       try {
-        const response = await axios.get('http://localhost:5101/the-team-members');
+        const response = await axios.get('https://national-auto-backup-frontend.onrender.com/the-team-members');
         setEmployees(response.data);
       } catch (error) {
         console.error('Error fetching team members:', error);

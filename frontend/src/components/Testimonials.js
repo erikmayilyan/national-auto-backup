@@ -20,7 +20,7 @@ function Testimonials () {
     const fetchReviews = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5101/api/reviews`
+          `https://national-auto-backup-frontend.onrender.com/api/reviews`
         );
         if (response.data) {
           setReviews(response.data);

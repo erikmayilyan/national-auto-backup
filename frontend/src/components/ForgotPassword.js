@@ -12,7 +12,7 @@ function ForgotPassword() {
     event.preventDefault();
     setMessage('');
     setError('');
-    axios.post('http://localhost:5101/forgot-password', { email })
+    axios.post('https://national-auto-backup-frontend.onrender.com/forgot-password', { email })
       .then(result => {
         if (result.status === 200 && result.data.Status === 'Success') {
           navigate('/thelogin');
