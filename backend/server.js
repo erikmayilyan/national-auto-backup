@@ -14,7 +14,7 @@ const authenticateToken = require('./middleware/auth');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 5101;
+const port = 5102;
 
 app.use(cors());
 app.use(express.json());
@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something went wrong!');
 });
 
-mongoose.connect("mongodb://127.0.0.1:27017/national_auto", {
+mongoose.connect("mongodb+srv://nationa-backup:SQgMmUlvFBEzWb5M@atlascluster.nfkaonm.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
