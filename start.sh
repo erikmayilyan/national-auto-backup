@@ -1,15 +1,14 @@
 #!/bin/bash
 
-# Start backend server
+# Install backend dependencies and start backend server
 cd backend
-npm install  # Install backend dependencies
+npm install
 node server.js &
-
-# Navigate back to parent directory
 cd ..
 
-# Start frontend server
+# Install frontend dependencies, build frontend, and serve it
 cd frontend
-npm install  # Install frontend dependencies
-npm run build  # Build the frontend for production
-serve -s build  # Serve the built frontend files
+npm install
+npm run build
+serve -s build -l 3001 &
+cd ..
