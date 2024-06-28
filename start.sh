@@ -3,7 +3,7 @@
 # Start backend server
 cd backend
 npm install
-nodemon server.js &
+node server.js &
 
 # Start frontend server
 cd ../frontend
