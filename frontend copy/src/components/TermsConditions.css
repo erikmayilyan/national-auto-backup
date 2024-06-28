@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.termsconditions {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+.termsconditions p {
+  font-family: "Roboto Mono", monospace;
+}
+
+.termsconditions h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.conditions {
+  margin-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 60px;
+}
+
+.backbtn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff; 
+  color: #212121; 
+  text-decoration: none;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: 800;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+}
+
+.backbtn:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
+.arrowback {
+  margin-right: 10px; 
+  font-size: 1.5em; 
+}

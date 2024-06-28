@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.application {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+.title-container {
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.title-container::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 5px; 
+  background-color: white;
+  width: calc(100% - 40px); 
+  max-width: 65%; 
+}
+
+.instructions-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-col {
+  margin: 40px auto;
+  max-width: 85%;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-basis: 48%;
+}
+
+.apply-col h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.apply-col p {
+  font-family: "Roboto Mono", monospace;
+  list-style: 0.3;
+}
+
+.apply-col form {
+  margin-top: 40px;
+}
+
+.downloadbtn {
+  background: #fff;
+  color: #212121;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  width: 170px;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.downloadbtn:hover {
+  background: #212121;
+  color: #fff;
+}
+
+.adobe {
+  color: red;
+  padding-right: 10px;
+  font-size: 150%;
+}
+
+.second-apply-col h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.submitbtn {
+  background: #fff;
+  color: #212121;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.submitbtn:hover {
+  background: #212121;
+  color: #fff;
+}
+
+.theinput {
+  width: 200px;
+}
+
+.status {
+  width: 230px;
+}
+
+.theinput, .the-text-message, .status, #status, .social-security-input {
+  background: #ffffff;
+  margin: 10px;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+  resize: none;
+}
+
+.the-text-message {
+  width: 450px;
+}
+
+form h4 {
+  font-family: 'Orbitron', sans-serif; 
+}
+
+.applynow {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(30, 30, 30, 0.573), rgba(17, 17, 17, 0.919)), url('../assets/applynow.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.applynow-text {
+  text-align: center;
+  max-width: 800px;
+}
+
+.applynow-text h1 {
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.applynow-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.btn {
+  background: #fff;
+  color: #212121;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.btn:hover {
+  background: #212121;
+  color: #fff;
+}
+
+.about-general {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  background-color: rgb(73, 73, 73);
+}
+
+.the-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+}
+
+.the-text h1 {
+  font-family: 'Orbitron', sans-serif; 
+  padding-bottom: 1rem;
+}
+
+.the-text p {
+  font-size: 1.3rem;
+}
+
+.second-text p {
+  font-size: 1.2rem;
+}
+
+.image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image img {
+  width: 90%;
+  height: 450px;
+  object-fit: cover;
+  background-color: linear-gradient(rgba(30, 30, 30, 0.573), rgba(17, 17, 17, 0.919));
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+.second-text {
+  margin-right: 50px;
+}
+
+.general-second {
+  padding-bottom: 50px;
+}
+
+.terms {
+  color: white;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal {
+  z-index: 1;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.check-mark {
+  color: green;
+  text-align: center;
+  font-size: 300%;
+}
+
+.modal h2 {
+  font-weight: 900;
+  font-size: 120%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal p {
+  margin-bottom: 10px;
+}
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 200px;
+}
+
+.modal-content h2,
+.modal-content p {
+  color: black;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  color: black;
+  cursor: pointer;
+}
+
+@media (min-width: 1100px) {
+  .instructions-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .apply-col {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-general {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+  
+  .image img {
+    height: 250px;
+  }
+
+  .the-text {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 591px) {
+  .lonelyinput {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .the-text-message {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .applynow-text h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .applynow-text h1 {
+    font-size: 35px;
+  }
+}

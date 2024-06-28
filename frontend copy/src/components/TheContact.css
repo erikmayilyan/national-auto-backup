@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.contacts {
+  background-color: rgb(76, 76, 76);
+}
+
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  margin-top: 40px;
+  font-size: 140%;
+  text-align: center; 
+}
+
+.employee-carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 26px;
+}
+
+.employee-container {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.pre-btn, .post-btn {
+  border: none;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-btn {
+  left: 0;
+}
+
+.post-btn {
+  right: 0;
+}
+
+.post-btn p, .pre-btn p {
+  font-size: 50px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  background-color: rgb(107, 107, 107);
+  padding: 20px;
+  margin: 0 auto; 
+  margin-bottom: 30px;
+}
+
+.map-contact-info {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 20px; 
+}
+
+.the-map {
+  flex: 1;
+}
+
+.map-contact-info {
+  margin-right: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+form h3 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 40px;
+  font-size: 140%;
+  color: white;
+}
+
+.form-details {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.contacthero {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(30, 30, 30, 0.573), rgba(17, 17, 17, 0.919)), url('../assets/contactlexus.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacthero-text {
+  text-align: center;
+  max-width: 800px;
+}
+
+.contacthero-text h1 {
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.contacthero-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.the-contact-call {
+  font-size: 120%;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 1250px) {
+  .map-contact-info {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  iframe {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  iframe {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .reviewbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 20px auto; 
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .map-contact-info {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .map-container {
+    flex-direction: column; 
+  }
+
+  .map-contact-info {
+    margin-right: 0;
+    margin-bottom: 60px; 
+  }
+
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  iframe {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  iframe {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  iframe {
+    width: 225px;
+    height: 200px;
+  }
+
+  form {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 335px) {
+  .map-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contacthero-text h1 {
+    font-size: 40px;
+  }
+}

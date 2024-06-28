@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.navbar {
+  width: 100%; 
+  display: flex; 
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.nice-logo {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  cursor: pointer;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px; 
+  margin-top: 10px;
+}
+
+.spinner-two {
+  margin-top: 20px;
+  color: rgb(224, 224, 224);
+  text-align: center;
+}
+
+.spinner-two h1 {
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 220%;
+  margin: 0;
+}
+
+.spinner-two h3 {
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 150%; 
+  position: relative; 
+  margin-top: 5px;
+}
+
+.spinner-two h3::before,
+.spinner-two h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px; 
+  height: 5px; 
+  background-color: rgb(224, 224, 224); 
+}
+
+.spinner-two h3::before {
+  left: -5px;
+}
+
+.spinner-two h3::after {
+  right: -5px; 
+}
+
+.nav-list {
+  list-style: none; 
+  font-family: 'Orbitron', sans-serif; 
+}
+
+.the-link {
+  transition: 0.3s ease-in-out;
+  font-weight: 900;
+}
+
+.the-link:hover::after,
+.the-link.active::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: gold;
+  position: absolute;
+  bottom: -4px;
+  left: 0px; 
+}
+
+
+.the-link:hover {
+  color: gold;
+}
+
+.menu {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  display: none;
+}
+
+.menu .span {
+  height: 2.5rem;
+  width: 100%;
+  color: #ffffff;
+  border-radius: 0.2rem;
+}
+
+.spinner-nice {
+  background: linear-gradient(45deg, rgb(182, 155, 0), rgb(255, 253, 243));
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+
+@media screen and (min-width: 1350px) {
+  .the-link {
+    font-size: 14px; 
+    transform: scale(1.25);
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1049px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding-right: 125px;
+  }
+
+  .menu {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nice-logo {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+
+  .nav-btn.nav-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .the-link {
+    font-size: 14px; 
+    transform: scale(1.5);
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .the-link:hover::after,
+  .the-link.active::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1150px) {
+  .the-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1050px) { 
+  .nav-list {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    flex: 1; 
+    color: white;
+  }
+
+  .the-link {
+    font-weight: 500; 
+    cursor: pointer;
+    color: #ffffff; 
+    margin-right: 2.5rem; 
+  }
+
+  .the-link:last-child {
+    margin-right: 0; 
+  }
+}
+
+@media screen and (max-width: 1375px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .spinner-two h1 {
+    font-size: 160%;
+  }
+
+  .spinner-two h3 {
+    font-size: 120%;
+  }
+
+  .spinner-two h3::before,
+  .spinner-two h3::after {
+    width: 27.5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .spinner-two h1 {
+    font-size: 90%;
+  }
+
+  .spinner-two h3 {
+    font-size: 70%;
+  }
+
+  .spinner-two h3::before,
+  .spinner-two h3::after {
+    width: 12.5px;
+  }
+
+  .menu {
+    margin-right: 5px;
+  }
+}

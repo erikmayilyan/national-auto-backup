@@ -1,0 +1,109 @@
+.the-link-redirect {
+  color: white;
+  font-size: 120%;
+}
+
+.the-link-for {
+  font-size: 140%;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 50px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.logout-button:hover {
+  background-color: rgb(72, 72, 72);
+  color: white;
+}
+
+.admin-nav {
+  background-color: grey;
+}
+
+.admin-nav ul li {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.member-info {
+  background-color: black;
+  color: white;
+  width: 40%;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.teammembers {
+  margin-bottom: 30px;
+}
+
+.add-form-member {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-form-member h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.add-form-member input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-form-member button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-form-member button:hover {
+  background-color: #fff;
+  color: #000000;
+}
