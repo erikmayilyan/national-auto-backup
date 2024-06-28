@@ -11,4 +11,5 @@ cd ..
 # Start frontend server
 cd frontend
 npm install  # Install frontend dependencies
-PORT=3001 npm start  # Start frontend server with specified PORT
+npm run build  # Build the frontend for production
+serve -s build  # Serve the built frontend files
