@@ -8,4 +8,4 @@ nodemon server.js &
 # Start frontend server
 cd ../frontend
 npm install
-npm start
+PORT=3001 npm start
