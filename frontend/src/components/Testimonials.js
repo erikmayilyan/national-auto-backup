@@ -122,8 +122,8 @@ function Testimonials () {
         <div className="test-slider">
           <ul ref={slider}>
           {
-            reviews.length > 0 ? (
-              reviews.map((review) => (
+            theReviews.length > 0 ? (
+              theReviews.map((review) => (
                 <li>
                   <div key={review.author_name} className="testimonial">
                     <div className="user-info">

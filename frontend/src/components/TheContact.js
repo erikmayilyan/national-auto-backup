@@ -171,7 +171,7 @@ function TheContact() {
         <h3 className="section-title">CONTACT TEAM</h3>
         <div className="employee-carousel">
           <div className="employee-container" style={{ display: 'flex', flexWrap: 'wrap' }}>
-            {employees.map(employee => (
+            {theMembers.map(employee => (
               <Card key={employee.id} employee={employee}/>
             ))}
           </div>
