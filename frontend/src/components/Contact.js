@@ -39,7 +39,7 @@ function Contact() {
 
     toggleModal();
 
-    fetch('https://national-auto-backup-frontend.onrender.com/contactHome', {
+    fetch('http://localhost:5102/contactHome', {
       method: "POST",
       headers: {
         Accept: "application/json",

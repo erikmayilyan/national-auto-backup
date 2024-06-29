@@ -79,7 +79,7 @@ app.post('/forgot-password', async (req, res) => {
       from: 'mayilyane9@gmail.com',
       to: email,
       subject: 'Reset Password',
-      text: `https://national-auto-backup-frontend.onrender.com/reset-password/${email}/${token}`
+      text: `http://localhost:5102/reset-password/${email}/${token}`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

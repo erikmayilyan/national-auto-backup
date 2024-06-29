@@ -271,7 +271,7 @@ function Application() {
 
     toggleModal();
 
-    fetch('https://national-auto-backup-frontend.onrender.com/applicationmail', {
+    fetch('http://localhost:5102/applicationmail', {
       method: "POST",
       headers: {
         Accept: "application/json",

@@ -15,7 +15,7 @@ function EditTeamMember() {
   useEffect(() => {
     const fetchTeamMember = async () => {
       try {
-        const response = await axios.get(`https://national-auto-backup-frontend.onrender.com/team-members/${id}`, {
+        const response = await axios.get(`http://localhost:5102/team-members/${id}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         console.log('Response:', response);
@@ -37,7 +37,7 @@ function EditTeamMember() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`https://national-auto-backup-frontend.onrender.com/team-members/${id}`, { name, occupation, cell, email }, {
+    axios.put(`http://localhost:5102/team-members/${id}`, { name, occupation, cell, email }, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     })
       .then(() => {

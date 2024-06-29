@@ -17,7 +17,7 @@ function TeamMembers() {
       }
 
       try {
-        const response = await axios.get('https://national-auto-backup-frontend.onrender.com/team-members', {
+        const response = await axios.get('http://localhost:5102/team-members', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -35,7 +35,7 @@ function TeamMembers() {
   const deleteTeamMember = async (id) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.delete(`https://national-auto-backup-frontend.onrender.com/team-members/${id}`, {
+      const response = await axios.delete(`http://localhost:5102/team-members/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
