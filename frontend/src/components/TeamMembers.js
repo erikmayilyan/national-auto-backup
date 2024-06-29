@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { MdModeEditOutline, MdDeleteOutline } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
 import "./Dashboard.css";
 import axios from 'axios';
 
 function TeamMembers() {
-  const { id } = useParams();
   const [teamMembers, setTeamMembers] = useState([]);
   const [error, setError] = useState('');
 

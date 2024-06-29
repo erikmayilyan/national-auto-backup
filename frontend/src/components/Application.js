@@ -769,7 +769,7 @@ function Application() {
                   </div>
                   <h2>Form Submitted!</h2>
                   <p>Thank you for submitting the inquiry. The request will be reviwed by our administration and we will contact you regarding the further steps!</p>
-                  <a className="close-modal" onClick={toggleModal}>
+                  <a href="#" className="close-modal" onClick={toggleModal}>
                     <IoMdClose />
                   </a>
                 </div>
