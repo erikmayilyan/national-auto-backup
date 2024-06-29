@@ -86,6 +86,65 @@ function TheContact() {
     fetchTeamMembers();
   }, []);
 
+  const theMembers = [
+    {
+      "_id": "6669b0f63d161ada83b76041",
+      "name": "Taron Piloyan",
+      "occupation": "Owner/Sales Manager",
+      "cell": "818.445.1062",
+      "email": "taron@nationalautola.com",
+      "__v": 0
+    },
+    {
+      "_id": "6669d0ff936f97b9b6ccba72",
+      "name": "Edgar Piloyan",
+      "occupation": "Sales Manager",
+      "cell": "818.200.3896",
+      "email": "edgar@nationalautola.com",
+      "__v": 0
+    },
+    {
+      "_id": "6669d138936f97b9b6ccba76",
+      "name": "Garen Tagachyan",
+      "occupation": "Sales Manager",
+      "cell": "818.404.3570",
+      "email": "garen@nationalautola.com",
+      "__v": 0
+    },
+    {
+      "_id": "6669d159936f97b9b6ccba7a",
+      "name": "Adriana Navaro",
+      "occupation": "Sales Manager (Se habla Espanol)",
+      "cell": "310.927.8297",
+      "email": "adriana@nationalautola.com",
+      "__v": 0
+    },
+    {
+      "_id": "6669d199936f97b9b6ccba80",
+      "name": "Arthur Matevosyan",
+      "occupation": "Sales Manager",
+      "cell": "818.257.8888",
+      "email": "arthur@nationalautola.com",
+      "__v": 0
+    },
+    {
+      "_id": "6669d1d0936f97b9b6ccba86",
+      "name": "Narek Petrosian",
+      "occupation": "Sales Manager",
+      "cell": "818.568.6049",
+      "email": "narek@nationalautola.com",
+      "__v": 0
+    },
+    {
+      "_id": "666ac469936f97b9b6ccba97",
+      "name": "Narek \"Nick\" Nazaryan",
+      "occupation": "Sales Manager",
+      "cell": "818.213.9922",
+      "email": "nick@nationalautola.com",
+      "__v": 0
+    }
+  ];  
+
   const handleCallClick = () => {
     window.location.href = "tel:+18189575700"; 
   };
@@ -112,7 +171,7 @@ function TheContact() {
         <h3 className="section-title">CONTACT TEAM</h3>
         <div className="employee-carousel">
           <div className="employee-container" style={{ display: 'flex', flexWrap: 'wrap' }}>
-            {employees.map(employee => (
+            {theMembers.map(employee => (
               <Card key={employee.id} employee={employee}/>
             ))}
           </div>

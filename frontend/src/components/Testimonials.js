@@ -63,6 +63,39 @@ function Testimonials () {
     window.location.href = "https://www.google.com/maps/place/National+Auto+Leasing+and+Sales/@34.1425586,-118.2352573,15z/data=!4m2!3m1!1s0x0:0xf3c29a213e8adfb1?sa=X&ved=1t:2428&ictx=111";
   };
 
+  const theReviews = [
+    {
+      "author_name": "John Doe",
+      "profile_photo_url": "https://example.com/profile_photos/john_doe.jpg",
+      "rating": 5,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida leo eget ex lobortis, non commodo velit placerat."
+    },
+    {
+      "author_name": "Jane Smith",
+      "profile_photo_url": "https://example.com/profile_photos/jane_smith.jpg",
+      "rating": 4,
+      "text": "Fusce sed eros nec metus tincidunt posuere. Vestibulum in est eget justo pharetra aliquam."
+    },
+    {
+      "author_name": "Michael Johnson",
+      "profile_photo_url": "https://example.com/profile_photos/michael_johnson.jpg",
+      "rating": 5,
+      "text": "Praesent semper velit ac augue cursus, sit amet aliquet nulla ultrices. Nunc aliquam eros non dolor fringilla, a molestie dui vestibulum."
+    },
+    {
+      "author_name": "Jake Smith",
+      "profile_photo_url": "https://example.com/profile_photos/jane_smith.jpg",
+      "rating": 5,
+      "text": "Fusce sed eros nec metus tincidunt posuere. Vestibulum in est eget justo pharetra aliquam."
+    },
+    {
+      "author_name": "Lena Johnston",
+      "profile_photo_url": "https://example.com/profile_photos/michael_johnson.jpg",
+      "rating": 5,
+      "text": "Praesent semper velit ac augue cursus, sit amet aliquet nulla ultrices. Nunc aliquam eros non dolor fringilla, a molestie dui vestibulum."
+    }
+  ];
+
   return (
     <div className="testimonials">
       <div className="the-home-page">
@@ -89,12 +122,11 @@ function Testimonials () {
         <div className="test-slider">
           <ul ref={slider}>
           {
-            reviews.length > 0 ? (
-              reviews.map((review) => (
+            theReviews.length > 0 ? (
+              theReviews.map((review) => (
                 <li>
                   <div key={review.author_name} className="testimonial">
                     <div className="user-info">
-                      <img src={review.profile_photo_url} alt="img" />
                       <div className="info-test">
                         <h3>{review.author_name}</h3>
                         <p className="the-stars">{displayStars(review.rating)}</p>
